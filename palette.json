@@ -1,0 +1,535 @@
+{
+  "shadePercents": [
+    56,
+    34,
+    18,
+    8
+  ],
+  "shadeOverrides": {},
+  "tokens": {
+    "brand": [
+      {
+        "name": "Глубокий красный",
+        "token": "red-700",
+        "hex": "#B8130E",
+        "source": "client",
+        "use": "Крупные брендовые поля, выразительные акценты; белый текст допустим."
+      },
+      {
+        "name": "Фирменный красный",
+        "token": "red-600",
+        "hex": "#EF1014",
+        "source": "client",
+        "use": "Основной брендовый акцент. Белый текст только крупный; для мелкого текста выбирайте чёрный."
+      },
+      {
+        "name": "Яркий красный",
+        "token": "red-500",
+        "hex": "#FF0008",
+        "source": "client",
+        "use": "Энергичные акценты и крупная графика. Белый текст только крупный."
+      },
+      {
+        "name": "Тёмный графит",
+        "token": "graphite-900",
+        "hex": "#1F2021",
+        "source": "client",
+        "use": "Основной текст, тёмные фоны и контрастные заголовки."
+      },
+      {
+        "name": "Графит",
+        "token": "graphite-700",
+        "hex": "#494951",
+        "source": "client",
+        "use": "Вторичный текст, спокойные тёмные блоки и детали."
+      },
+      {
+        "name": "Тёплый камень",
+        "token": "stone-500",
+        "hex": "#9B8C8C",
+        "source": "client",
+        "use": "Декоративные поля и графические элементы; не мелкий текст на белом."
+      }
+    ],
+    "neutral": [
+      {
+        "name": "Белый",
+        "token": "white",
+        "hex": "#FFFFFF",
+        "source": "client",
+        "use": "Основное свободное пространство и контрастный текст на тёмном."
+      },
+      {
+        "name": "Мягкий белый",
+        "token": "mist-50",
+        "hex": "#FCFBFD",
+        "source": "client",
+        "use": "Лёгкий холодный фон длинных разделов."
+      },
+      {
+        "name": "Холодный светлый",
+        "token": "mist-100",
+        "hex": "#ECF0F6",
+        "source": "client",
+        "use": "Фон информационных блоков и отделение секций."
+      },
+      {
+        "name": "Светлая сталь",
+        "token": "steel-100",
+        "hex": "#ECEEF0",
+        "source": "client",
+        "use": "Нейтральные подложки, панели и спокойные поверхности."
+      },
+      {
+        "name": "Тёплый светлый",
+        "token": "stone-50",
+        "hex": "#F1EFEE",
+        "source": "client",
+        "use": "Тёплые фоны и чередование больших разделов."
+      },
+      {
+        "name": "Светлая роза",
+        "token": "rose-50",
+        "hex": "#F7ECEE",
+        "source": "client",
+        "use": "Мягкая брендовая подложка. Повтор из исходника объединён."
+      }
+    ],
+    "caption": [
+      {
+        "name": "Сланцевый",
+        "token": "slate-500",
+        "hex": "#495054",
+        "source": "client",
+        "use": "Подписи и вторичный текст на светлых поверхностях."
+      },
+      {
+        "name": "Стальной",
+        "token": "steel-400",
+        "hex": "#8DA5BD",
+        "source": "client",
+        "use": "Светлый текст на тёмном графите или подложка; не мелкий текст на белом."
+      },
+      {
+        "name": "Светлый стальной",
+        "token": "steel-300",
+        "hex": "#AABBCD",
+        "source": "client",
+        "use": "Светлый текст на тёмном графите, фон и декоративные детали."
+      },
+      {
+        "name": "Мягкий красный",
+        "token": "red-400",
+        "hex": "#EF4747",
+        "source": "client",
+        "use": "Цветные акценты; на белом только крупный текст, не мелкие подписи."
+      },
+      {
+        "name": "Чернильный",
+        "token": "ink",
+        "hex": "#1A1D1E",
+        "source": "client",
+        "use": "Самый контрастный текст и небольшие подписи."
+      }
+    ],
+    "tint": [
+      {
+        "name": "Красный 8%",
+        "token": "red-50",
+        "shadeOf": "red-500",
+        "percent": 8,
+        "source": "proposed",
+        "use": "Предложение: деликатный красный фон, смесь с белым 8%."
+      },
+      {
+        "name": "Красный 18%",
+        "token": "red-100",
+        "shadeOf": "red-500",
+        "percent": 18,
+        "source": "proposed",
+        "use": "Предложение: светлая брендовая подложка, смесь с белым 18%."
+      },
+      {
+        "name": "Красный 34%",
+        "token": "red-200",
+        "shadeOf": "red-500",
+        "percent": 34,
+        "source": "proposed",
+        "use": "Предложение: выделение области, смесь с белым 34%."
+      },
+      {
+        "name": "Красный 56%",
+        "token": "red-300",
+        "shadeOf": "red-500",
+        "percent": 56,
+        "source": "proposed",
+        "use": "Предложение: выразительное красное поле, смесь с белым 56%."
+      }
+    ],
+    "accent": [
+      {
+        "name": "Зелёная кнопка",
+        "token": "green-400",
+        "hex": "#41E67E",
+        "source": "client",
+        "use": "Кнопочная тема с чёрным текстом."
+      },
+      {
+        "name": "Фиолетовая кнопка",
+        "token": "violet-500",
+        "hex": "#6265EE",
+        "source": "client",
+        "use": "Кнопочная тема с белым текстом."
+      },
+      {
+        "name": "Жёлтая кнопка",
+        "token": "yellow-400",
+        "hex": "#FFF000",
+        "source": "client",
+        "use": "Кнопочная тема с чёрным текстом."
+      },
+      {
+        "name": "Оранжевая кнопка",
+        "token": "orange-500",
+        "hex": "#EE561B",
+        "source": "client",
+        "use": "Кнопочная тема с чёрным текстом, в том числе при нажатии."
+      }
+    ]
+  },
+  "buttonStates": {
+    "normal": {
+      "name": "Обычная",
+      "source": "client"
+    },
+    "hover": {
+      "name": "Наведение",
+      "source": "derived",
+      "factor": 0.95
+    },
+    "active": {
+      "name": "Нажатие",
+      "source": "derived",
+      "factor": 0.9
+    },
+    "focus": {
+      "name": "Фокус",
+      "source": "derived",
+      "description": "Обычный цвет и двойной контур: белый внутренний, чернильный внешний."
+    },
+    "disabled": {
+      "name": "Недоступна",
+      "source": "derived",
+      "background": "steel-100",
+      "foreground": "slate-500",
+      "description": "Нейтральное состояние без прозрачности. Действие недоступно."
+    }
+  },
+  "buttons": [
+    {
+      "id": "green",
+      "name": "Зелёная",
+      "token": "green-400",
+      "foreground": "#000000"
+    },
+    {
+      "id": "violet",
+      "name": "Фиолетовая",
+      "token": "violet-500",
+      "foreground": "#FFFFFF"
+    },
+    {
+      "id": "yellow",
+      "name": "Жёлтая",
+      "token": "yellow-400",
+      "foreground": "#000000"
+    },
+    {
+      "id": "orange",
+      "name": "Оранжевая",
+      "token": "orange-500",
+      "foreground": "#000000"
+    }
+  ],
+  "gradients": [
+    {
+      "name": "Светлый фон",
+      "token": "g-background",
+      "angle": 90,
+      "stops": [
+        {
+          "hex": "#FFFFFF",
+          "position": 0
+        },
+        {
+          "hex": "#FCFCFC",
+          "position": 0
+        },
+        {
+          "hex": "#FCFCFC",
+          "position": 9
+        },
+        {
+          "hex": "#F9F9F9",
+          "position": 74
+        },
+        {
+          "hex": "#DDDDDD",
+          "position": 100
+        }
+      ],
+      "use": "Фоновый градиент клиента. Две точки на 0% сохранены точно. Текст размещайте отдельно от изменяющегося фона.",
+      "source": "client"
+    },
+    {
+      "name": "Красный брендовый",
+      "token": "g-red",
+      "angle": 110,
+      "stops": [
+        {
+          "token": "red-700",
+          "position": 0
+        },
+        {
+          "token": "red-600",
+          "position": 45
+        },
+        {
+          "token": "red-500",
+          "position": 100
+        }
+      ],
+      "use": "Крупные брендовые поля и графика. Текст вынесен за градиент.",
+      "source": "derived"
+    },
+    {
+      "name": "Графитовый брендовый",
+      "token": "g-graphite",
+      "angle": 110,
+      "stops": [
+        {
+          "token": "graphite-900",
+          "position": 0
+        },
+        {
+          "token": "graphite-700",
+          "position": 60
+        },
+        {
+          "token": "stone-500",
+          "position": 100
+        }
+      ],
+      "use": "Глубокие графитовые поверхности. Текст вынесен за градиент.",
+      "source": "derived"
+    }
+  ],
+  "logoColors": {
+    "red": "#CD192A",
+    "graphite": "#303A45",
+    "reversedRed": "#F25560",
+    "white": "#FFFFFF"
+  },
+  "contrasts": [
+    {
+      "name": "Белый текст / Глубокий красный",
+      "foreground": "white",
+      "background": "red-700"
+    },
+    {
+      "name": "Белый текст / Фирменный красный",
+      "foreground": "white",
+      "background": "red-600"
+    },
+    {
+      "name": "Белый текст / Яркий красный",
+      "foreground": "white",
+      "background": "red-500"
+    },
+    {
+      "name": "Белый текст / Тёмный графит",
+      "foreground": "white",
+      "background": "graphite-900"
+    },
+    {
+      "name": "Белый текст / Графит",
+      "foreground": "white",
+      "background": "graphite-700"
+    },
+    {
+      "name": "Белый текст / Тёплый камень",
+      "foreground": "white",
+      "background": "stone-500"
+    },
+    {
+      "name": "Сланцевый / белый",
+      "foreground": "slate-500",
+      "background": "white"
+    },
+    {
+      "name": "Сланцевый / тёмный графит",
+      "foreground": "slate-500",
+      "background": "graphite-900"
+    },
+    {
+      "name": "Стальной / белый",
+      "foreground": "steel-400",
+      "background": "white"
+    },
+    {
+      "name": "Стальной / тёмный графит",
+      "foreground": "steel-400",
+      "background": "graphite-900"
+    },
+    {
+      "name": "Светлый стальной / белый",
+      "foreground": "steel-300",
+      "background": "white"
+    },
+    {
+      "name": "Светлый стальной / тёмный графит",
+      "foreground": "steel-300",
+      "background": "graphite-900"
+    },
+    {
+      "name": "Мягкий красный / белый",
+      "foreground": "red-400",
+      "background": "white"
+    },
+    {
+      "name": "Мягкий красный / тёмный графит",
+      "foreground": "red-400",
+      "background": "graphite-900"
+    },
+    {
+      "name": "Чернильный / белый",
+      "foreground": "ink",
+      "background": "white"
+    },
+    {
+      "name": "Чернильный / тёмный графит",
+      "foreground": "ink",
+      "background": "graphite-900"
+    },
+    {
+      "name": "Основной текст / Белый",
+      "foreground": "graphite-900",
+      "background": "white"
+    },
+    {
+      "name": "Основной текст / Мягкий белый",
+      "foreground": "graphite-900",
+      "background": "mist-50"
+    },
+    {
+      "name": "Основной текст / Холодный светлый",
+      "foreground": "graphite-900",
+      "background": "mist-100"
+    },
+    {
+      "name": "Основной текст / Светлая сталь",
+      "foreground": "graphite-900",
+      "background": "steel-100"
+    },
+    {
+      "name": "Основной текст / Тёплый светлый",
+      "foreground": "graphite-900",
+      "background": "stone-50"
+    },
+    {
+      "name": "Основной текст / Светлая роза",
+      "foreground": "graphite-900",
+      "background": "rose-50"
+    },
+    {
+      "name": "Основной текст / Красный 8%",
+      "foreground": "graphite-900",
+      "background": "red-50"
+    },
+    {
+      "name": "Основной текст / Красный 18%",
+      "foreground": "graphite-900",
+      "background": "red-100"
+    },
+    {
+      "name": "Основной текст / Красный 34%",
+      "foreground": "graphite-900",
+      "background": "red-200"
+    },
+    {
+      "name": "Основной текст / Красный 56%",
+      "foreground": "graphite-900",
+      "background": "red-300"
+    },
+    {
+      "name": "Зелёная кнопка / обычная",
+      "foreground": "#000000",
+      "background": "green-400"
+    },
+    {
+      "name": "Зелёная кнопка / наведение",
+      "foreground": "#000000",
+      "background": "#3EDB78"
+    },
+    {
+      "name": "Зелёная кнопка / нажатие",
+      "foreground": "#000000",
+      "background": "#3BCF71"
+    },
+    {
+      "name": "Фиолетовая кнопка / обычная",
+      "foreground": "#FFFFFF",
+      "background": "violet-500"
+    },
+    {
+      "name": "Фиолетовая кнопка / наведение",
+      "foreground": "#FFFFFF",
+      "background": "#5D60E2"
+    },
+    {
+      "name": "Фиолетовая кнопка / нажатие",
+      "foreground": "#FFFFFF",
+      "background": "#585BD6"
+    },
+    {
+      "name": "Жёлтая кнопка / обычная",
+      "foreground": "#000000",
+      "background": "yellow-400"
+    },
+    {
+      "name": "Жёлтая кнопка / наведение",
+      "foreground": "#000000",
+      "background": "#F2E400"
+    },
+    {
+      "name": "Жёлтая кнопка / нажатие",
+      "foreground": "#000000",
+      "background": "#E6D800"
+    },
+    {
+      "name": "Оранжевая кнопка / обычная",
+      "foreground": "#000000",
+      "background": "orange-500"
+    },
+    {
+      "name": "Оранжевая кнопка / наведение",
+      "foreground": "#000000",
+      "background": "#E2521A"
+    },
+    {
+      "name": "Оранжевая кнопка / нажатие",
+      "foreground": "#000000",
+      "background": "#D64D18"
+    },
+    {
+      "name": "Недоступная кнопка / нейтральная подложка",
+      "foreground": "slate-500",
+      "background": "steel-100"
+    }
+  ],
+  "publishing": {
+    "repository": "bashir226/bp-brandbook",
+    "branch": "main",
+    "path": "palette.json"
+  }
+}

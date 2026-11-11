@@ -1,0 +1,13 @@
+/*
+!/.gitignore
+!/.github/
+!/palette.json
+!/site/
+!/fonts/
+!/logo/
+!/materials/
+/site/downloads/
+/site/palette-data.js
+/site/downloads-data.js
+/site/edit.html
+/site/__pycache__/

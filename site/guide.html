@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Как пользоваться брендбуком «Бизнес Партнер»</title>
+<style>
+@font-face { font-family: "Inter"; src: url("${inter_regular}"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("${inter_semibold}"); font-weight: 600; }
+@font-face { font-family: "PT Serif"; src: url("${pt_regular}"); font-weight: 400; }
+@page { size: A4; margin: 14mm 15mm 16mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { color: #1F2021; font: 9.6pt/1.55 "Inter", Arial, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1 { font: 400 31pt/1.02 "PT Serif", serif; letter-spacing: -0.03em; }
+h2 { margin-bottom: 3.5mm; font: 400 17pt/1.2 "PT Serif", serif; letter-spacing: -0.015em; }
+h3 { margin-bottom: 1.2mm; font: 600 10pt/1.4 "Inter", sans-serif; }
+p + p { margin-top: 2mm; }
+strong { font-weight: 600; }
+.page { break-before: page; }
+.block { margin-top: 8mm; break-inside: avoid; }
+.lead { color: #495054; font-size: 10.2pt; }
+.cover { display: flex; justify-content: space-between; align-items: stretch; gap: 8mm; padding: 10mm; background: #1A1D1E; color: #FFFFFF; }
+.cover__text { display: flex; flex-direction: column; justify-content: space-between; gap: 8mm; }
+.cover__logo { width: 46mm; }
+.cover__subtitle { margin-top: 3mm; color: #AABBCD; font-size: 10.5pt; }
+.cover__bars { display: flex; gap: 2mm; margin-top: 5mm; }
+.cover__bars span { height: 2.4mm; }
+.cover__bars span:nth-child(1) { width: 22mm; background: #B8130E; }
+.cover__bars span:nth-child(2) { width: 11mm; background: #EF1014; }
+.cover__bars span:nth-child(3) { width: 5.5mm; background: #FF0008; }
+.cover__colors { display: grid; grid-template-columns: repeat(6, 9mm); gap: 1.2mm; align-self: stretch; }
+.cover__colors span { min-height: 44mm; }
+.address { display: flex; justify-content: space-between; align-items: center; gap: 6mm; margin-top: 5mm; padding: 5mm 6mm; border-left: 1.4mm solid #B8130E; background: #F7ECEE; }
+.address__url { color: #B8130E; font-size: 12pt; font-weight: 600; white-space: nowrap; }
+.address__note { color: #495054; font-size: 8.8pt; }
+.map { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+.map div { padding: 3.5mm 4mm; background: #F1EFEE; }
+.map div:nth-child(5) { background: #B8130E; color: #FFFFFF; }
+.map p { color: #495054; font-size: 8.8pt; line-height: 1.45; }
+.map div:nth-child(5) p { color: #FFFFFF; }
+.steps { list-style: none; }
+.steps li { position: relative; min-height: 7mm; padding: 0 0 2.6mm 10mm; }
+.steps li span.number { position: absolute; left: 0; top: 0.2mm; width: 6.4mm; height: 6.4mm; border-radius: 50%; background: #1A1D1E; color: #FFFFFF; font-size: 8.4pt; font-weight: 600; line-height: 6.4mm; text-align: center; }
+.path { display: inline-block; margin: 1mm 0; padding: 1mm 2.4mm; background: #ECF0F6; font-size: 8.8pt; font-weight: 600; word-break: break-all; }
+.shot { display: block; width: 100%; border: 0.3mm solid #AABBCD; }
+table { width: 100%; border-collapse: collapse; font-size: 8.9pt; }
+th, td { padding: 2.4mm 2.6mm; border-bottom: 0.3mm solid #AABBCD; text-align: left; vertical-align: top; }
+th { color: #495054; font-weight: 600; }
+td:first-child { font-weight: 600; width: 38mm; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm; }
+.rules { list-style: none; }
+.rules li { margin-bottom: 2.2mm; padding-left: 4mm; border-left: 0.9mm solid #B8130E; }
+.rules--no li { border-left-color: #1A1D1E; }
+.chip { display: inline-block; width: 3.2mm; height: 3.2mm; margin-right: 1.2mm; vertical-align: -0.4mm; border: 0.2mm solid #AABBCD; }
+.contact { margin-top: 9mm; padding: 6mm; background: #1A1D1E; color: #FFFFFF; break-inside: avoid; }
+.contact p { color: #AABBCD; }
+.contact strong { color: #FFFFFF; }
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <div class="cover__text">
+    <img class="cover__logo" src="${logo_reversed}" alt="Бизнес Партнер">
+    <div>
+      <h1>Как пользоваться<br>брендбуком</h1>
+      <div class="cover__bars"><span></span><span></span><span></span></div>
+      <p class="cover__subtitle">Краткая инструкция для сотрудников и подрядчиков</p>
+    </div>
+  </div>
+  <div class="cover__colors">${cover_colors}</div>
+</section>
+
+<div class="address">
+  <div>
+    <h3>Адрес брендбука</h3>
+    <p class="address__url">${site_url}</p>
+  </div>
+  <p class="address__note">Сохраните ссылку в закладки браузера. Сайт открывается на компьютере и телефоне.</p>
+</div>
+
+<section class="block">
+  <h2>Что есть на сайте</h2>
+  <div class="map">
+    <div><h3>Цвета и оттенки</h3><p>Коды фирменных цветов, шкалы оттенков, фоны, цвета подписей и кнопок.</p></div>
+    <div><h3>Логотип</h3><p>Какую версию ставить на светлый и тёмный фон и как делать нельзя.</p></div>
+    <div><h3>Шрифты</h3><p>PT Serif для заголовков, Inter для текста. Размеры для заголовков и подписей.</p></div>
+    <div><h3>Примеры</h3><p>Как выглядят правильные баннер и коммерческое предложение.</p></div>
+    <div><h3>Скачать под задачу</h3><p>Готовые комплекты файлов с инструкцией внутри.</p></div>
+    <div><h3>Отдельные файлы</h3><p>Палитры, шрифты, логотипы, бланк письма и эта инструкция.</p></div>
+  </div>
+</section>
+
+<section class="block">
+  <h2>Скопировать код цвета</h2>
+  <ol class="steps">
+    <li><span class="number">1</span>Откройте раздел <strong>«Цвета и оттенки»</strong>.</li>
+    <li><span class="number">2</span>Нажмите на нужный цвет или оттенок. Внизу экрана появится надпись «Цвет … скопирован».</li>
+    <li><span class="number">3</span>Перейдите в программу и вставьте код в поле цвета: <strong>Ctrl + V</strong>. Код выглядит так: #B8130E.</li>
+    <li><span class="number">4</span>Под каждой шкалой есть кнопки <strong>ASE</strong> и <strong>PNG</strong>: так можно скачать один цвет вместе с его оттенками.</li>
+  </ol>
+</section>
+
+<section class="page">
+  <h2>Скачать файлы под задачу</h2>
+  <p class="lead">В разделе «Скачать под задачу» выберите, что вы делаете, и нажмите «Скачать комплект». Внутри архива — всё нужное и файл «Как установить».</p>
+  <img class="shot" src="${shot_tasks}" alt="Комплекты файлов на сайте" style="margin-top: 5mm;">
+  <table style="margin-top: 5mm;">
+    <thead><tr><th>Что вы делаете</th><th>Какой комплект скачать</th></tr></thead>
+    <tbody>
+      <tr><td>Письмо, договор, презентация</td><td><strong>Документы и презентации</strong>: цвета и шрифты для Word и PowerPoint, бланк письма, логотипы PNG.</td></tr>
+      <tr><td>Баннер, листовка, макет для печати</td><td><strong>Реклама и макеты</strong>: палитра для Adobe, логотипы SVG и PDF, шрифты, шкалы оттенков.</td></tr>
+      <tr><td>Сайт, пост, аватар</td><td><strong>Сайт и соцсети</strong>: цвета для сайта, логотипы SVG и PNG, аватары.</td></tr>
+    </tbody>
+  </table>
+  <div class="block">
+    <h2>Открыть архив</h2>
+    <p>Скачанный файл с окончанием <strong>.zip</strong> — это архив. Нажмите на него правой кнопкой мыши и выберите <strong>«Извлечь всё»</strong>, затем «Извлечь». Работайте с файлами из появившейся папки.</p>
+    <p>Если фирменные цвета обновятся, файлы на сайте пересоберутся автоматически. Перед новой задачей скачивайте свежий комплект, а не берите старую копию.</p>
+  </div>
+  <div class="block">
+    <h2>Установить шрифты</h2>
+    <ol class="steps">
+      <li><span class="number">1</span>Откройте в распакованном архиве папку <strong>«Шрифты»</strong>.</li>
+      <li><span class="number">2</span>Выделите все файлы с окончанием <strong>.ttf</strong>: Ctrl + A.</li>
+      <li><span class="number">3</span>Нажмите правой кнопкой и выберите <strong>«Установить для всех пользователей»</strong> или «Установить».</li>
+      <li><span class="number">4</span>Закройте и снова откройте Word, PowerPoint или графический редактор — шрифты PT Serif и Inter появятся в списке.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="page">
+  <h2>Фирменные цвета и шрифты в Word и PowerPoint</h2>
+  <p class="lead">Делается один раз на компьютере. После этого фирменные цвета и их светлые оттенки появятся в палитре Office, а заголовки и текст получат нужные шрифты.</p>
+  <ol class="steps" style="margin-top: 4mm;">
+    <li><span class="number">1</span>Скачайте и распакуйте комплект <strong>«Документы и презентации»</strong>, установите шрифты.</li>
+    <li><span class="number">2</span>Нажмите <strong>Win + R</strong>, вставьте строку и нажмите Enter:<br><span class="path">%APPDATA%\Microsoft\Templates\Document Themes</span></li>
+    <li><span class="number">3</span>Скопируйте файл из папки архива «Тема Office\Theme Colors» в папку <strong>Theme Colors</strong>, а файл из «Тема Office\Theme Fonts» — в папку <strong>Theme Fonts</strong>. Если таких папок нет, создайте их с этими же названиями.</li>
+    <li><span class="number">4</span>В Word: вкладка <strong>«Конструктор»</strong> → «Цвета» → «Бизнес Партнер», затем «Шрифты» → «Бизнес Партнер».<br>В PowerPoint: <strong>«Конструктор»</strong> → «Варианты» → «Цвета» и «Шрифты» → «Бизнес Партнер».</li>
+  </ol>
+  <div class="two block">
+    <div>
+      <h2>Бланк письма</h2>
+      <p>Откройте <strong>«Бланк письма.docx»</strong>, замените поля «Должность получателя», «Тема письма» и другие на свои данные. Логотип и реквизиты уже на месте.</p>
+      <p>Чтобы бланк был всегда под рукой: «Файл» → «Сохранить как» → тип файла <strong>«Шаблон Word»</strong>.</p>
+    </div>
+    <div>
+      <h2>Illustrator, Photoshop, InDesign</h2>
+      <p>Откройте панель <strong>«Образцы»</strong> (Swatches), в её меню выберите «Открыть библиотеку образцов» или «Загрузить образцы» и укажите файл <strong>«Палитра Adobe.ase»</strong> из комплекта «Реклама и макеты».</p>
+      <p>В Figma скопируйте коды цветов с сайта и сохраните их как стили цвета.</p>
+    </div>
+  </div>
+  <div class="block">
+    <h2>Печать</h2>
+    <p>В брендбуке цвета указаны для экрана — HEX и RGB. Перед печатью передайте их типографии: точные цвета CMYK подбираются под конкретную бумагу и оборудование.</p>
+  </div>
+</section>
+
+<section class="page">
+  <h2>Логотип</h2>
+  <img class="shot" src="${shot_logo_versions}" alt="Версии логотипа для разных фонов">
+  <div class="two block" style="margin-top: 5mm;">
+    <div>
+      <h3>Как правильно</h3>
+      <ul class="rules">
+        <li>На белом и светлом фоне — цветной логотип.</li>
+        <li>На тёмном и красном фоне — белый или инверсный.</li>
+        <li>Оставляйте вокруг логотипа свободное поле не меньше четверти его высоты.</li>
+        <li>Минимальная ширина полного логотипа — 120 px на экране и 30 мм в печати.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Нельзя</h3>
+      <ul class="rules rules--no">
+        <li>Растягивать, сжимать и поворачивать логотип.</li>
+        <li>Перекрашивать его в другие цвета, в том числе в цвета кнопок.</li>
+        <li>Ставить цветной логотип на тёмный фон.</li>
+        <li>Собирать логотип заново или копировать его со скриншота — берите файлы из архива.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="block">
+    <h2>Цвет и читаемость текста</h2>
+    <ul class="rules">
+      <li><span class="chip" style="background:#EF1014"></span><span class="chip" style="background:#FF0008"></span>На фирменном и ярком красном мелкий текст — <strong>чёрный</strong>. Белый — только крупный, от 24 px.</li>
+      <li><span class="chip" style="background:#B8130E"></span>На глубоком красном белый текст можно любого размера.</li>
+      <li><span class="chip" style="background:#495054"></span>Подписи на белом — сланцевый #495054. Светлые стальные #8DA5BD и #AABBCD — только на тёмном фоне.</li>
+      <li><span class="chip" style="background:#41E67E"></span>Для одного и того же действия на сайте — одна и та же тема кнопки.</li>
+    </ul>
+  </div>
+  <div class="contact">
+    <h3>Если что-то не получается</h3>
+    <p>Напишите на <strong>info@bp-nov.ru</strong> или позвоните <strong>+7 (8162) 60-33-40</strong>, Пн–Пт 08:00–17:00. Приложите скриншот — так быстрее помочь.</p>
+  </div>
+</section>
+
+</body>
+</html>
