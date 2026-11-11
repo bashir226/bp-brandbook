@@ -5,7 +5,11 @@
     18,
     8
   ],
-  "shadeOverrides": {},
+  "shadeOverrides": {
+    "stone-500": {
+      "8": "#F3EEEE"
+    }
+  },
   "tokens": {
     "brand": [
       {
@@ -531,5 +535,6 @@
     "repository": "bashir226/bp-brandbook",
     "branch": "main",
     "path": "palette.json"
-  }
+  },
+  "revision": "2026-11-11T17:56:05.177Z"
 }
