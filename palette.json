@@ -5,11 +5,7 @@
     18,
     8
   ],
-  "shadeOverrides": {
-    "stone-500": {
-      "8": "#F3EEEE"
-    }
-  },
+  "shadeOverrides": {},
   "tokens": {
     "brand": [
       {
@@ -536,5 +532,5 @@
     "branch": "main",
     "path": "palette.json"
   },
-  "revision": "2026-11-11T17:56:05.177Z"
+  "revision": "2026-11-11T17:58:10.546Z"
 }
